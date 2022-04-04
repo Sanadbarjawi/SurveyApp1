@@ -8,26 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		C935C24B27FAC02F00DFAC74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935C24A27FAC02F00DFAC74 /* AppDelegate.swift */; };
-		C935C24D27FAC02F00DFAC74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935C24C27FAC02F00DFAC74 /* SceneDelegate.swift */; };
 		C935C24F27FAC02F00DFAC74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935C24E27FAC02F00DFAC74 /* ViewController.swift */; };
 		C935C25227FAC02F00DFAC74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C935C25027FAC02F00DFAC74 /* Main.storyboard */; };
 		C935C25427FAC03300DFAC74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C935C25327FAC03300DFAC74 /* Assets.xcassets */; };
 		C935C25727FAC03300DFAC74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C935C25527FAC03300DFAC74 /* LaunchScreen.storyboard */; };
+		C935C26027FAC0D700DFAC74 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935C25F27FAC0D700DFAC74 /* NetworkService.swift */; };
+		C935C26427FAC26800DFAC74 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935C26327FAC26800DFAC74 /* Question.swift */; };
+		C935C27327FAC2D100DFAC74 /* QuizTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C935C27227FAC2D100DFAC74 /* QuizTestCase.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C935C26D27FAC2B800DFAC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C935C23F27FAC02F00DFAC74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C935C24627FAC02F00DFAC74;
+			remoteInfo = SurveyApp1;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C935C24727FAC02F00DFAC74 /* SurveyApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurveyApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C935C24A27FAC02F00DFAC74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C935C24C27FAC02F00DFAC74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C935C24E27FAC02F00DFAC74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C935C25127FAC02F00DFAC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C935C25327FAC03300DFAC74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C935C25627FAC03300DFAC74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C935C25827FAC03300DFAC74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C935C25F27FAC0D700DFAC74 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C935C26327FAC26800DFAC74 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		C935C26927FAC2B800DFAC74 /* SurveyApp1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurveyApp1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C935C27227FAC2D100DFAC74 /* QuizTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C935C24427FAC02F00DFAC74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C935C26627FAC2B800DFAC74 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				C935C24927FAC02F00DFAC74 /* SurveyApp1 */,
+				C935C26A27FAC2B800DFAC74 /* SurveyApp1Tests */,
 				C935C24827FAC02F00DFAC74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				C935C24727FAC02F00DFAC74 /* SurveyApp1.app */,
+				C935C26927FAC2B800DFAC74 /* SurveyApp1Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,8 +80,8 @@
 		C935C24927FAC02F00DFAC74 /* SurveyApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				C935C25E27FAC0CA00DFAC74 /* API */,
 				C935C24A27FAC02F00DFAC74 /* AppDelegate.swift */,
-				C935C24C27FAC02F00DFAC74 /* SceneDelegate.swift */,
 				C935C24E27FAC02F00DFAC74 /* ViewController.swift */,
 				C935C25027FAC02F00DFAC74 /* Main.storyboard */,
 				C935C25327FAC03300DFAC74 /* Assets.xcassets */,
@@ -65,6 +89,39 @@
 				C935C25827FAC03300DFAC74 /* Info.plist */,
 			);
 			path = SurveyApp1;
+			sourceTree = "<group>";
+		};
+		C935C25E27FAC0CA00DFAC74 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C935C26227FAC25C00DFAC74 /* Service */,
+				C935C26127FAC25700DFAC74 /* Model */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C935C26127FAC25700DFAC74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C935C26327FAC26800DFAC74 /* Question.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C935C26227FAC25C00DFAC74 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C935C25F27FAC0D700DFAC74 /* NetworkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C935C26A27FAC2B800DFAC74 /* SurveyApp1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C935C27227FAC2D100DFAC74 /* QuizTestCase.swift */,
+			);
+			path = SurveyApp1Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +144,24 @@
 			productReference = C935C24727FAC02F00DFAC74 /* SurveyApp1.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C935C26827FAC2B800DFAC74 /* SurveyApp1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C935C26F27FAC2B800DFAC74 /* Build configuration list for PBXNativeTarget "SurveyApp1Tests" */;
+			buildPhases = (
+				C935C26527FAC2B800DFAC74 /* Sources */,
+				C935C26627FAC2B800DFAC74 /* Frameworks */,
+				C935C26727FAC2B800DFAC74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C935C26E27FAC2B800DFAC74 /* PBXTargetDependency */,
+			);
+			name = SurveyApp1Tests;
+			productName = SurveyApp1Tests;
+			productReference = C935C26927FAC2B800DFAC74 /* SurveyApp1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +174,11 @@
 				TargetAttributes = {
 					C935C24627FAC02F00DFAC74 = {
 						CreatedOnToolsVersion = 13.3;
+					};
+					C935C26827FAC2B800DFAC74 = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+						TestTargetID = C935C24627FAC02F00DFAC74;
 					};
 				};
 			};
@@ -116,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				C935C24627FAC02F00DFAC74 /* SurveyApp1 */,
+				C935C26827FAC2B800DFAC74 /* SurveyApp1Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +212,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C935C26727FAC2B800DFAC74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +227,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				C935C24F27FAC02F00DFAC74 /* ViewController.swift in Sources */,
+				C935C26427FAC26800DFAC74 /* Question.swift in Sources */,
+				C935C26027FAC0D700DFAC74 /* NetworkService.swift in Sources */,
 				C935C24B27FAC02F00DFAC74 /* AppDelegate.swift in Sources */,
-				C935C24D27FAC02F00DFAC74 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C935C26527FAC2B800DFAC74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C935C27327FAC2D100DFAC74 /* QuizTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C935C26E27FAC2B800DFAC74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C935C24627FAC02F00DFAC74 /* SurveyApp1 */;
+			targetProxy = C935C26D27FAC2B800DFAC74 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C935C25027FAC02F00DFAC74 /* Main.storyboard */ = {
@@ -336,6 +441,55 @@
 			};
 			name = Release;
 		};
+		C935C27027FAC2B800DFAC74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDZ9JJAWHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Barjawi.SurveyApp1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurveyApp1.app/SurveyApp1";
+			};
+			name = Debug;
+		};
+		C935C27127FAC2B800DFAC74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = BDZ9JJAWHH;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Barjawi.SurveyApp1Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurveyApp1.app/SurveyApp1";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -353,6 +507,15 @@
 			buildConfigurations = (
 				C935C25C27FAC03300DFAC74 /* Debug */,
 				C935C25D27FAC03300DFAC74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C935C26F27FAC2B800DFAC74 /* Build configuration list for PBXNativeTarget "SurveyApp1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C935C27027FAC2B800DFAC74 /* Debug */,
+				C935C27127FAC2B800DFAC74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
